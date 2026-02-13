@@ -1,6 +1,6 @@
 import ollama
 
-MODEL_NAME = "gemma:2b"
+MODEL_NAME = "llama3:8b"
 
 
 def agent_decision(query):
@@ -33,3 +33,4 @@ def agent_decision(query):
         return "search"
 
     return "direct"
+
