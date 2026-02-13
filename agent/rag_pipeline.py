@@ -2,7 +2,7 @@ from agent.router import agent_decision
 from vectordb.retriever import retriever
 import ollama
 
-MODEL_NAME = "gemma:2b"
+MODEL_NAME = "llama3:8b"
 
 
 def direct_answer(query):
@@ -51,3 +51,4 @@ def rag_answer(query):
     )
 
     return response["message"]["content"]
+
