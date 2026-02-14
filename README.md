@@ -1,24 +1,18 @@
-# Agentic RAG Assistant
-
+Agentic RAG Assistant
 An **Agentic Retrieval-Augmented Generation (RAG)** system that intelligently decides whether to answer a user query directly or retrieve information from uploaded documents before generating a response.
-
 This project demonstrates how modern AI assistants combine **LLMs, vector databases, and intelligent routing agents** to provide accurate, context-aware answers.
 
----
-
-## 🚀 Project Overview
-
+ Project Overview
 Traditional RAG systems always search documents before answering, even for simple queries.
 This project implements an **Agentic RAG pipeline**, where an agent first decides:
 
-* ✅ Answer directly using model knowledge
-* ✅ Search uploaded documents and then answer
+*  Answer directly using model knowledge
+*  Search uploaded documents and then answer
 
 This improves efficiency, reduces unnecessary retrieval, and mimics real-world AI assistant behavior.
 
----
 
-## 🧠 Architecture
+-> Architecture
 
 ```
 User Query
@@ -40,20 +34,20 @@ Direct Answer   Vector Search (ChromaDB)
 
 ---
 
-## ✨ Features
+-> Features
 
-* ✅ Agent-based routing (Direct vs Document search)
-* ✅ PDF document ingestion
-* ✅ Semantic search using embeddings
-* ✅ ChromaDB vector database
-* ✅ Local LLM support via Ollama
-* ✅ Flask-based web interface
-* ✅ Privacy-friendly local execution
-* ✅ Modular project structure
+* Agent-based routing (Direct vs Document search)
+* PDF document ingestion
+* Semantic search using embeddings
+* ChromaDB vector database
+* Local LLM support via Ollama
+* Flask-based web interface
+* Privacy-friendly local execution
+* Modular project structure
 
 ---
 
-## 🛠️ Tech Stack
+-> Tech Stack
 
 | Component       | Technology              |
 | --------------- | ----------------------- |
@@ -67,7 +61,7 @@ Direct Answer   Vector Search (ChromaDB)
 
 ---
 
-## 📂 Project Structure
+-> Project Structure
 
 ```
 Agentic_RAG/
@@ -96,9 +90,9 @@ Agentic_RAG/
 
 ---
 
-## ⚙️ Installation
+-> Installation
 
-### 1️⃣ Clone the repository
+1️⃣ Clone the repository
 
 ```bash
 git clone <your-repo-link>
@@ -107,7 +101,7 @@ cd Agentic_RAG
 
 ---
 
-### 2️⃣ Create virtual environment
+2️⃣ Create virtual environment
 
 ```bash
 python -m venv venv
@@ -123,7 +117,7 @@ venv\Scripts\activate
 
 ---
 
-### 3️⃣ Install dependencies
+3️⃣ Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -131,7 +125,7 @@ pip install -r requirements.txt
 
 ---
 
-### 4️⃣ Install Ollama
+4️⃣ Install Ollama
 
 Download from:
 
@@ -145,7 +139,7 @@ ollama pull llama3:8b
 
 ---
 
-### 5️⃣ Add Documents
+5️⃣ Add Documents
 
 Place PDFs inside:
 
@@ -154,16 +148,14 @@ data/pdfs/
 ```
 
 ---
-
-### 6️⃣ Create Vector Database
+6️⃣ Create Vector Database
 
 ```bash
 python vectordb/create_db.py
 ```
 
 ---
-
-### 7️⃣ Run Application
+7️⃣ Run Application
 
 ```bash
 python app.py
@@ -177,16 +169,16 @@ http://127.0.0.1:5000
 
 ---
 
-## ✅ Example Queries
+-> Example Queries
 
-### Direct Answers
+#Direct Answers
 
 ```
 Hello
 What is Artificial Intelligence?
 ```
 
-### Document-Based Queries
+#Document-Based Queries
 
 ```
 Summarize the machine learning PDF
@@ -195,7 +187,7 @@ Explain supervised learning from the document
 
 ---
 
-## 🧩 How Agentic RAG Works
+-> How Agentic RAG Works
 
 1. User sends a query.
 2. Agent analyzes intent.
@@ -205,7 +197,7 @@ Explain supervised learning from the document
 
 ---
 
-## ⚠️ Important Notes
+-> Important Notes
 
 * Do NOT upload `vectordb/chroma_db/` to GitHub.
 * Always recreate vector DB after cloning:
@@ -217,7 +209,7 @@ Explain supervised learning from the document
 
 ---
 
-## 📌 Future Improvements
+-> Future Improvements
 
 * Streaming responses
 * Retrieval validation agent
