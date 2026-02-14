@@ -1,4 +1,5 @@
-Agentic RAG Assistant
+Agentic RAG Assistant:
+
 An **Agentic Retrieval-Augmented Generation (RAG)** system that intelligently decides whether to answer a user query directly or retrieve information from uploaded documents before generating a response.
 This project demonstrates how modern AI assistants combine **LLMs, vector databases, and intelligent routing agents** to provide accurate, context-aware answers.
 
